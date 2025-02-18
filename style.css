@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: rgb(228, 238, 241);
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: scroll;
+}
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+nav {
+    display: flex;
+    gap: 15px;
+    font-size: 15px;
+    color: black
+}
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #6c3eeb;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+.search input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+.search button {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: max-content;
+}
+.container {
+    padding: 20px;
+}
+.categories, .browse-all {
+    margin-bottom: 20px;
+}
+.categories h2, .browse-all h2 {
+    color: #333;
+}
+.categories ul, .browse-all ul {
+    list-style-type: none;
+    padding: 0;
+}
+.categories ul li, .browse-all ul li {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+footer {
+    background-color: rgb(228, 238, 241);
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
