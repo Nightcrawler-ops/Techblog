@@ -66,10 +66,9 @@ nav a:hover {
 .Business {
     position: relative;
 }
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+.grid-item img{
+    height: 220px;
+    width: 240px;
 }
 .D {
     background-image: ();
