@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 80px; /* Adjust this value based on the header's height */
     background-color: #f4f4f4;
 }
 header {
@@ -13,7 +14,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: scroll;
+    z-index: 1000; /* Ensure this value is higher than other elements */
 }
 header h1 {
     margin: 0;
@@ -24,7 +25,7 @@ nav {
     display: flex;
     gap: 15px;
     font-size: 15px;
-    color: black
+    color: black;
 }
 nav a {
     color: black;
@@ -54,41 +55,51 @@ nav a:hover {
     border-radius: 3px;
     cursor: pointer;
 }
+
 .img {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    width: max-content;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
-.container {
-    padding: 20px;
-}
-.Business {
-    position: relative;
-}
-.grid-item img{
-    height: 220px;
-    width: 240px;
-}
-.D {
-    background-image: ();
-}
-.categories, .browse-all {
-    margin-bottom: 20px;
-}
-.categories h2, .browse-all h2 {
-    color: #333;
-}
-.categories ul, .browse-all ul {
-    list-style-type: none;
-    padding: 0;
-}
-.categories ul li, .browse-all ul li {
-    background-color: #fff;
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
+.categories {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .category {
+        position: relative;
+    }
+    .category img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .category span {
+        position: absolute;
+        bottom: 10px;
+        left: 1px;
+        background-color: rgba(0, 0, 0, 0.295);
+        color: white;
+        padding: 5px;
+        border-radius: 0 8px 8px 0;
+    }
+    .category img:hover {
+        opacity: 0.7;
+        transform: scale3d(1.1, 1.1, 1.1);
+        transition: 0.5s;
+        transition-behavior: smooth;
+    }
+    .more-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
 footer {
     background-color: rgb(228, 238, 241);
     color: black;
