@@ -6,35 +6,60 @@
     <title>Techblog</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!DOCTYPE html>
+    <html lang="en">
 </head>
-<body>
-    <header>
-        <div class="banner">
-            <div class="logo">
-                <h1>Techblog</h1>
-            </div>
+    <body>
+        <header>
+            <h1>TECHBLOG</h1>
             <nav>
-                <ul>
-                    <li class="nav"><a href="home.html">Home</a></li>
-                    <li class="nav"><a href="#">Business</a></li>
-                    <li class="nav"><a href="#">Culture</a></li>
-                    <li class="nav"><a href="#">Designs</a></li>
-                    <li class="nav"><a href="#">Transportation</a></li>
-                </ul>
+                <a href="#">Business</a>
+                <a href="#">Culture</a>
+                <a href="#">Design</a>
+                <a href="#">Transportation</a>
             </nav>
-        </div>
-        <div class="search">
-            <input type="text" name="search" placeholder="Search...">
-        </div>
-    </header>
-
-<main>
-    <section id="showcase">
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button>Q</button>
+            </div>
+        </header>
+        <section class="img">
+            <img src="img/header.png" alt="section">
+        </section>
         <div class="container">
-            <h1>Technology Blog</h1>
-            <p>Technology is the collection of techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation.</p>
+            <div class="Business">
+                <h3>Business</h3>
+                <div class="grid">
+                    <div class="grid"></div>
+                        <div class="grid-item">
+                            <img src="img/VR.jpg" class="VR" alt="Virtual Reality">
+                            <p>Virtual Reality</p>
+                        </div>
+                        <div class="grid-item">
+                            <img src="img/urban.png" class="UD" alt="Urban Design">
+                            <p>Urban Design</p>
+                        </div>
+                        <div class="grid-item">
+                            <img src="img/wear.jpg" class="W" alt="Wearables">
+                            <p>Wearables</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="browse-all">
+                <h2>Browse All</h2>
+                <ul>
+                    <li>Art</li>
+                    <li>Design</li>
+                    <li>Spaces</li>
+                    <li>Architecture</li>
+                    <li>More</li>
+                </ul>
+            </div>
         </div>
-</main>
-
-</body>
-</html>
+        <footer>
+            <p class="left">2012-2017 Techblog</p>
+            <p class="right">About | Terms | Privacy Policy</p>
+        </footer>
+    </body>
+    </html>
